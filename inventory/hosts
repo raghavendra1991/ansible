@@ -1,0 +1,7 @@
+[dev]
+172.31.0.169 ansible_ssh_user=ansnode "ansible_sudo_pass=node"
+172.31.42.45 ansible_ssh_user=ansnode "ansible_sudo_pass=node"
+
+[prod]
+172.31.34.139 ansible_ssh_user=ansnode "ansible_sudo_pass=node"
+

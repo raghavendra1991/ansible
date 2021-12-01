@@ -1,0 +1,14 @@
+--- #initial setup configuration ansible
+- name: configuration setup node side
+  hosts: dev
+  become: yes
+  vars_files:
+    - vars.yml
+  tasks:
+  - name: install package
+    apt:
+      name: "{{ web_package }}"
+      state: present
+  - name: print output
+    debug:
+      msg: "{{ web_package }}"
